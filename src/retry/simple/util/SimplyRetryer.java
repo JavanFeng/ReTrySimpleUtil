@@ -234,11 +234,7 @@ class RetryResult<T> {
     }
 
     public boolean isSuccess() {
-        if (this.result != null) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.throwable == null;
     }
 
 }

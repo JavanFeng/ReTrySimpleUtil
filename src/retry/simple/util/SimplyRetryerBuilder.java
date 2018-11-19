@@ -16,9 +16,9 @@ public class SimplyRetryerBuilder<T> {
     /** 默认重试时间 */
     private static final long DEFAULT_TIME_OUT = -1L;
     /** 重试 */
-    private static int tryNum = DEFAULT_TRY_NUM;
+    private  int tryNum = DEFAULT_TRY_NUM;
     /** 超时 */
-    private static long timeOut = DEFAULT_TIME_OUT;
+    private  long timeOut = DEFAULT_TIME_OUT;
 
     /** 创建实例 */
     public SimplyRetryer<T> build() {
